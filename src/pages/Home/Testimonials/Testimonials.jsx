@@ -6,6 +6,7 @@ import { Navigation } from "swiper/modules";
 import { useEffect, useState } from "react";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
+import { FaQuoteLeft } from "react-icons/fa";
 
 const Testimonials = () => {
   const [reviews, setReviews] = useState([]);
@@ -22,6 +23,10 @@ const Testimonials = () => {
         subHeading={"---What Our Clients Say---"}
         heading={"TESTIMONIALS"}
       ></SectionTitle>
+
+      <div className="flex justify-center">
+        <FaQuoteLeft className="h-12 w-12 text-black-500" />
+      </div>
 
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         {reviews.map((review) => (
