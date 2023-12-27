@@ -19,7 +19,7 @@ const ChefCard = () => {
     </>
   );
   return (
-    <section>
+    <section className="my-12">
       <SectionTitle subHeading={"---Should Try---"} heading={"CHEF RECOMMENDS"}></SectionTitle>
 
       <div className="grid md:grid-cols-3">
