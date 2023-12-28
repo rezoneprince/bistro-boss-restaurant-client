@@ -2,7 +2,7 @@ import moment from "moment";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="mt-9">
       <div className="footer p-10 bg-neutral text-neutral-content">
         <aside>
           <svg
