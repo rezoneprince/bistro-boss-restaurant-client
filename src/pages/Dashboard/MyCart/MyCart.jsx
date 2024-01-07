@@ -42,7 +42,6 @@ const MyCart = () => {
       <Helmet>
         <title>Bistro Boss | My Cart</title>
       </Helmet>
-      <h2>My Cart</h2>
       <div className="uppercase font-bold h-[60px] flex justify-evenly">
         <h3 className="text-3xl">Total Items: {cart.length}</h3>
         <h3 className="text-3xl">Total Price: ${total}</h3>

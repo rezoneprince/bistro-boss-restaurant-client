@@ -9,7 +9,9 @@ const PrivateRoute = ({ children }) => {
   if (loading) {
     return (
       <>
-        <span className="loading loading-ring loading-lg"></span>
+        <div className="flex justify-center mt-72">
+          <span className="loading loading-ring loading-lg"></span>
+        </div>
       </>
     );
   }
@@ -17,7 +19,7 @@ const PrivateRoute = ({ children }) => {
   if (user) {
     return children;
   }
-  return <Navigate to={"/login"} state={{ from: location }} replace></Navigate>;
+  return <Navigate to="/login" state={{ from: location }} replace></Navigate>;
 };
 
 export default PrivateRoute;
